@@ -7,15 +7,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-public class HelloDockerApplication {
+public class EchoService {
 
     public static void main(String[] args) {
-        SpringApplication.run(HelloDockerApplication.class, args);
+        SpringApplication.run(EchoService.class, args);
     }
 
     @GetMapping("/")
     public String index() {
-        return "Greetings from Spring Boot!";
+        return "Hello from EchoService!";
     }
 
 }
